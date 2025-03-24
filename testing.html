@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needy Girl Overdose!!!!</Nav></title>
+</head>
+<body>
+    <div class="window">
+        <div class="title ico-webcam">
+          <span style="padding-bottom: 10px;">webcam</span>
+        </div>
+        <div class="content" style="padding:0;width: 100%;height: auto;">
+          <img class="image" src="https://i.postimg.cc/vZJwKghd/20250324-142337.jpg" alt="my_face"/></a>
+        </div>
+      </div>
+      <style>
+        /*this code was inspired by lilith :) !! thank you girl!! https://lilithdev.neocities.org/
+        out of respect for her i will keep the original variable names <3*/
+        :root {
+            --lilith-inactive-color: #E2E2E2;
+            --lilith-outer-color: #94F1E1;
+            --lilith-inner-color: #EDD0EE;
+            --lilith-border-color: #4932C9;
+            --lilith-window-text-color: #4932C9;
+            --lilith-window-text-back: #F9EFF9;
+            --lilith-username-color: #5072D6;
+            --lilith-button-color: #F8E1FB;
+            --lilith-task-color: #F3E1F7;
+            --lilith-scrollbar-inner-color: #DB8ED6;
+            --lilith-scrollbar-inner-hover-color: #B471B0;
+            --lilith-scrollbar-outer-color: #C5EAFC;
+        }
+
+        body {
+          cursor: url("/cursor.png"), auto;
+          color: var(--lilith-window-text-color);
+          /*font-family: "MS ui gothic";*/
+          image-rendering: pixelated;
+          /*font-size: 17px;*/
+          font-size: 18px;
+        }
+
+        .window {
+          display: inline-block;
+          width: auto;
+          max-width: 100%;
+          border: 2px solid var(--lilith-border-color);
+          background: var(--lilith-inactive-color);
+          padding: 4px;
+          padding-bottom: 16px;
+          box-shadow: 4px 4px rgba(80,20,255,0.2);
+          padding-bottom: 0;
+        }
+
+        .window::after {
+          content: url('https://i.postimg.cc/zvt9FVv6/window-bottom.png');
+          display: block;
+          margin-bottom: -4px;
+        }
+
+
+        /*special*/
+        /*.wrapper:hover .title*/
+        .window:hover {
+          background: var(--lilith-outer-color);
+        }
+        .window:hover .title {
+          background: var(--lilith-inner-color);
+        }
+
+        .active {
+          background: var(--lilith-outer-color);
+        }
+        /**/
+
+        .window .title {
+          border: 2px solid var(--lilith-border-color);
+          background: var(--lilith-inactive-color);
+          color: var(--lilith-window-text-color);
+          /*font-family: "MS ui gothic";*/
+          image-rendering: pixelated;
+          font-weight: bold;
+          /*font-size: 17px;*/
+          height: 22px;
+          
+          /*display: flex;
+          align-items: center;
+          justify-content: space-between;*/
+        }
+
+        .window .title span {
+          /*flex: 1;*/
+          text-overflow: ellipsis;
+          vertical-align: middle;
+          display: inline-block;
+          overflow: hidden;
+          position: relative;
+          top: 2px;
+        }
+
+        .title::before {
+          content: url(https://i.postimg.cc/7PK8kQ99/webcam.png);
+          float: left;
+          padding-right: 2px;
+          width: 22px;
+          height: 22px;
+        }
+
+        .title::after {
+          content: url(https://i.postimg.cc/gjkChvz3/window-buttons2.png);
+          float: right;
+          pointer-events: all;
+        }
+
+      </style>
+</body>
+</html>
