@@ -88,6 +88,7 @@
 
         body {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between; 
           align-items: flex-start;
           color: var(--lilith-window-text-color);
@@ -95,12 +96,14 @@
           image-rendering: pixelated;
           /*font-size: 17px;*/
           font-size: 18px;
+          background: linear-gradient(rgb(251,220,220,.15),rgb(251,220,220,.15)),url(https://lalithedev.github.io/cute_website/needyemoji/Other/walpaper.png);
         }
 
         .window {
           flex-grow: 1;
           display: inline-block;
           width: auto;
+          min-width: 300px;
           max-width: 100%;
           border: 2px solid var(--lilith-border-color);
           background: var(--lilith-inactive-color);
@@ -188,14 +191,21 @@
           /* font-size: 17px; */
           margin-top: 4px;
           padding: 4px;
-      }
+        }
 
-      .ico-bio.title::before {
-        content: url(https://i.postimg.cc/Y9bdFZyC/bio.png);
-        float: left;
-        padding-right: 2px;
-    }
+        .ico-bio.title::before {
+          content: url(https://i.postimg.cc/Y9bdFZyC/bio.png);
+          float: left;
+          padding-right: 2px;
+        }
 
-      </style>
+        @media (max-width: 768px) {
+        body {
+            flex-direction: column; /* Stacks elements vertically */
+            align-items: center; /* Centers them */
+        }
+        } 
+
+    </style>
 </body>
 </html>
