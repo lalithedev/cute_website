@@ -84,8 +84,6 @@
             --lilith-scrollbar-inner-color: #DB8ED6;
             --lilith-scrollbar-inner-hover-color: #B471B0;
             --lilith-scrollbar-outer-color: #C5EAFC;
-            --lilith-cursor-normal: url(hhttps://lalithedev.github.io/cute_website/needyemoji/Other/cursor.png), auto;
-            --lilith-cursor-click: url(https://lalithedev.github.io/cute_website/needyemoji/Other/click.png) 7 0, auto;
         }
 
         body {
@@ -98,8 +96,16 @@
           image-rendering: pixelated;
           /*font-size: 17px;*/
           font-size: 18px;
-          cursor: var(--lilith-cursor-normal);
+          cursor: url('https://lalithedev.github.io/cute_website/needyemoji/Other/cursor.png'), auto;
           background: linear-gradient(rgb(251,220,220,.15),rgb(251,220,220,.15)),url(https://lalithedev.github.io/cute_website/needyemoji/Other/wallpaper.png);
+        }
+
+        a, button{
+          cursor: url('https://lalithedev.github.io/cute_website/needyemoji/Other/click.png'), pointer;
+        }
+
+        p, h1, h2, h3, h4, h5, h6, span, div {
+          cursor: url('https://lalithedev.github.io/cute_website/needyemoji/Other/cursor_text.png'), text;
         }
 
         .window {
