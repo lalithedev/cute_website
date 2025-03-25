@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Needy Girl Overdose!!!!</Nav></title>
+    <title>Needy Girl Overdose!!!</title>
 </head>
+
 <body>
-    <div class="window">
+    <div class="window" >
         <div class="title ico-webcam">
-          <span style="padding-bottom: 10px;">webcam</span>
+          <span style="padding-bottom: 10px;font-family:pixelmplus12;">webcam</span>
         </div>
-        <div class="content" style="padding:0;width: 100%;height: auto;">
-          <img class="image" src="https://i.postimg.cc/vZJwKghd/20250324-142337.jpg" alt="my_face"/></a>
+        <div class="content" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 10px;">
+          <img class="image" src="https://i.postimg.cc/vZJwKghd/20250324-142337.jpg" style="width: 50%; height: auto; object-fit: contain;" alt="my_face"/>
+        </div>
+            
+    </div>
+
+      <div class = "window" style="width: 50%;">
+        <div class="title ico-bio"> 
+          <span style = "font-family:pixelmplus12;">bio</span>
+
+        </div>
+        <div class="content">
+          <div class = "aboutme" style = "padding:10px;">
+            <p>
+              Hello, I'm Lara! Nice to meet you!
+            </p>
+            <p>
+              I'm a young inspiring programmer who loves this field very dearly. I'm currently 17 years old and I hope to one day become someone who can change the world for the better. <img src="\needyemoji\Emoji\emoji_face_smile.png" style="width: 20px; height: 20px;vertical-align: text-bottom;" alt="emoji">
+            </p>
+            <p>
+              On my free time I draw and listen to music. Art is very special to me and I always strive to improve at what I love doing, and that includes programming as well! <img src="\needyemoji\Emoji\emoji_heart_growing.png" style="width: 20px; height: 20px;vertical-align: text-bottom;" alt="emoji">
+            </p>
+            <p>
+              If you know me already (or if you search a bit on this website haha) you can see that this is my second time in this kind of ERASMUS+ mobility! That's right, I'm back on ERASMUS+ thanks to my awesome teachers who not only help me learn but also give me and other students once-in-a-lifetime opportunities! I'm very thankful for my school and for the teachers Paulo Ribeiro and Duarte Duarte for organizing these kind of projects. Thank you!! <img src="\needyemoji\Emoji\emoji_face_smile_heart.png" style="width: 20px; height: 20px;vertical-align: text-bottom;" alt="emoji">
+            </p>
+          </div>
+          
         </div>
         
       </div>
-      <div class = "window">
-        <div class="title ico-bio">
-          <span>bio</span>
-        </div>
-        <p>
-          Hello, I'm Lara! Nice to meet you!
-        </p>
-        <p>
-          I'm a young inspiring programmer who loves this field very dearly. I'm currently 17 years old and I hope to one day become someone who can change the world for the better. 😄
-        </p>
-        <p>
-          On my free time I draw and listen to music. Art is very special to me and I always strive to improve at what I love doing, and that includes programming as well!🫡
-        </p>
-        <p>
-          If you know me already (or if you search a bit on this website haha) you can see that this is my second time in this kind of ERASMUS+ mobility! That's right, I'm back on ERASMUS+ thanks to my awesome teachers who not only help me learn but also give me and other students once-in-a-lifetime opportunities! I'm very thankful for my school and for the teachers Paulo Ribeiro and Duarte Duarte for organizing these kind of projects. Thank you!! 🫶
-        </p>
-      </div>
+
       <style>
         /*this code was inspired by lilith :) !! thank you girl!! https://lilithdev.neocities.org/
         out of respect for her i will keep the original variable names <3*/
+
+        @font-face {
+          font-family: "Determination";
+          src: url(fonts/determination.woff) format("woff");
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        @font-face {
+          font-family: "pixelmplus12";
+          src: url(fonts/pixelmplus12-regular-webfont.woff) format("woff");
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        @font-face {
+          font-family: "pixelmplus12";
+          src: url(fonts/pixelmplus12-bold-webfont.woff) format("woff");
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        html {
+          font-family: "Determination";
+        }
+
         :root {
             --lilith-inactive-color: #E2E2E2;
             --lilith-outer-color: #94F1E1;
@@ -51,7 +87,9 @@
         }
 
         body {
-          cursor: url("/cursor.png"), auto;
+          display: flex;
+          justify-content: space-between; 
+          align-items: flex-start;
           color: var(--lilith-window-text-color);
           /*font-family: "MS ui gothic";*/
           image-rendering: pixelated;
@@ -60,11 +98,13 @@
         }
 
         .window {
+          flex-grow: 1;
           display: inline-block;
           width: auto;
           max-width: 100%;
           border: 2px solid var(--lilith-border-color);
           background: var(--lilith-inactive-color);
+          margin: 10px;
           padding: 4px;
           padding-bottom: 16px;
           box-shadow: 4px 4px rgba(80,20,255,0.2);
@@ -138,6 +178,23 @@
           float: right;
           pointer-events: all;
         }
+
+        .window .content {
+          border: 2px solid var(--lilith-border-color);
+          background: var(--lilith-window-text-back);
+          color: var(--lilith-window-text-color);
+          /* font-family: "MS ui gothic"; */
+          image-rendering: pixelated;
+          /* font-size: 17px; */
+          margin-top: 4px;
+          padding: 4px;
+      }
+
+      .ico-bio.title::before {
+        content: url(https://i.postimg.cc/Y9bdFZyC/bio.png);
+        float: left;
+        padding-right: 2px;
+    }
 
       </style>
 </body>
